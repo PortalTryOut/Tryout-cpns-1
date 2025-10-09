@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id" class="h-full">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,37 +10,61 @@
         body {
             box-sizing: border-box;
         }
+
         .timer-warning {
             animation: pulse 1s infinite;
         }
+
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
         }
     </style>
 </head>
+
 <body class="h-full bg-gradient-to-br from-blue-50 to-indigo-100 font-sans">
     <div class="min-h-full flex flex-col">
         <!-- Welcome Page -->
-        <div id="welcomePage" class="min-h-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
+        <div id="welcomePage"
+            class="min-h-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 relative overflow-hidden">
             <!-- Background Pattern -->
-            <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
-            
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=" 60" height="60" viewBox="0 0 60 60"
+                xmlns="http://www.w3.org/2000/svg" %3E%3Cg fill="none" fill-rule="evenodd" %3E%3Cg fill="%23ffffff"
+                fill-opacity="0.05" %3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20">
+            </div>
+
             <div class="max-w-lg w-full mx-4 relative z-10">
-                <div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 p-10 text-center">
+                <div
+                    class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 p-10 text-center">
                     <!-- Header Section -->
                     <div class="mb-10">
-                        <div class="w-24 h-24 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg p-2">
-                            <img src="https://i.postimg.cc/RCNTsyGt/Logo-Portal-Try-Out.png" alt="Logo Portal Try Out" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <div class="w-full h-full bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center hidden">
+                        <div
+                            class="w-24 h-24 bg-white rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg p-2">
+                            <img src="https://i.postimg.cc/RCNTsyGt/Logo-Portal-Try-Out.png" alt="Logo Portal Try Out"
+                                class="w-full h-full object-contain"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div
+                                class="w-full h-full bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl flex items-center justify-center hidden">
                                 <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
                                 </svg>
                             </div>
                         </div>
-                        <h1 class="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-3">Portal Try Out</h1>
+                        <h1
+                            class="text-4xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent mb-3">
+                            Portal Try Out</h1>
                         <p class="text-gray-600 text-lg font-medium">"Latihan Cerdas, Karir Tuntas"</p>
-                        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full mx-auto mt-4"></div>
+                        <div class="w-20 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full mx-auto mt-4">
+                        </div>
                     </div>
 
                     <!-- Try Out Info -->
@@ -53,11 +78,13 @@
                             <div class="text-xl font-bold text-blue-700">30</div>
                             <div class="text-xs text-blue-600 font-medium">TWK</div>
                         </div>
-                        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-3 border border-green-200">
+                        <div
+                            class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-3 border border-green-200">
                             <div class="text-xl font-bold text-green-700">35</div>
                             <div class="text-xs text-green-600 font-medium">TIU</div>
                         </div>
-                        <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-3 border border-purple-200">
+                        <div
+                            class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-3 border border-purple-200">
                             <div class="text-xl font-bold text-purple-700">45</div>
                             <div class="text-xs text-purple-600 font-medium">TKP</div>
                         </div>
@@ -69,19 +96,12 @@
                             <label for="participantToken" class="block text-sm font-semibold text-gray-700 mb-3">
                                 Token Akses
                             </label>
-                            <input 
-                                type="password" 
-                                id="participantToken" 
-                                name="participantToken"
+                            <input type="password" id="participantToken" name="participantToken"
                                 class="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:border-blue-500 focus:outline-none transition-all duration-300 text-gray-800 font-medium placeholder-gray-400"
-                                placeholder="Masukkan token akses"
-                                required
-                            >
+                                placeholder="Masukkan token akses" required>
                         </div>
-                        <button 
-                            type="submit"
-                            class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 px-8 rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-                        >
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-4 px-8 rounded-xl hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                             🚀 Mulai Tryout Sekarang
                         </button>
                     </form>
@@ -89,14 +109,17 @@
                     <!-- Admin Section -->
                     <div class="border-t border-gray-200 pt-6">
                         <p class="text-xs text-gray-500 mb-4">
-                            💡 <strong>Untuk mendapatkan password pembahasan, silahkan kerjakan try out terlebih dahulu !</strong>
+                            💡 <strong>Untuk mendapatkan password pembahasan, silahkan kerjakan try out terlebih dahulu
+                                !</strong>
                         </p>
-                        <button 
-                            id="adminBtn"
-                            class="text-sm text-gray-600 hover:text-blue-600 transition-colors duration-300 font-medium border border-gray-300 px-4 py-2 rounded-lg hover:border-blue-300"
-                        >
-                            🔐 Akses Pembahasan
-                        </button>
+                        <div class="flex justify-center mt-6">
+                            <button id="adminBtn" class="text-sm font-semibold text-white bg-gradient-to-r from-blue-500 to-cyan-400 
+               hover:from-blue-600 hover:to-cyan-500 shadow-md hover:shadow-lg 
+               transition-all duration-300 px-5 py-2.5 rounded-xl flex items-center gap-2">
+                                🔐 Akses Pembahasan
+                            </button>
+                        </div>
+
                         <p class="text-xs text-gray-400 mt-4">
                             Pastikan koneksi internet stabil selama mengerjakan
                         </p>
@@ -105,42 +128,48 @@
                     <!-- Social Media Section -->
                     <div class="border-t border-gray-200 pt-6 mt-6">
                         <h3 class="text-base font-bold text-gray-800 mb-4 text-center">📱 Ikuti Portal Try Out</h3>
-                        <p class="text-sm text-gray-600 text-center mb-4">Dapatkan tips, info terbaru, dan motivasi belajar CPNS</p>
-                        
+                        <p class="text-sm text-gray-600 text-center mb-4">Dapatkan tips, info terbaru, dan motivasi
+                            belajar CPNS</p>
+
                         <!-- Social Media Buttons -->
                         <div class="grid grid-cols-2 gap-3 mb-4">
                             <!-- TikTok -->
-                            <a href="https://www.tiktok.com/@portal.tryout" target="_blank" rel="noopener noreferrer" 
-                               class="flex items-center justify-center gap-2 bg-gradient-to-r from-gray-800 to-black text-white py-3 px-4 rounded-lg hover:from-gray-900 hover:to-gray-800 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <a href="https://www.tiktok.com/@portal.tryout" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center justify-center gap-2 bg-gradient-to-r from-gray-800 to-black text-white py-3 px-4 rounded-lg hover:from-gray-900 hover:to-gray-800 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43V7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.43z"/>
+                                    <path
+                                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43V7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.43z" />
                                 </svg>
                                 <span class="text-sm font-semibold">TikTok</span>
                             </a>
 
                             <!-- Instagram -->
-                            <a href="https://www.instagram.com/portaltryout/" target="_blank" rel="noopener noreferrer" 
-                               class="flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <a href="https://www.instagram.com/portaltryout/" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center justify-center gap-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 px-4 rounded-lg hover:from-pink-600 hover:to-purple-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                                 </svg>
                                 <span class="text-sm font-semibold">Instagram</span>
                             </a>
 
                             <!-- YouTube -->
-                            <a href="https://www.youtube.com/@portaltryout" target="_blank" rel="noopener noreferrer" 
-                               class="flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-red-600 text-white py-3 px-4 rounded-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <a href="https://www.youtube.com/@portaltryout" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center justify-center gap-2 bg-gradient-to-r from-red-500 to-red-600 text-white py-3 px-4 rounded-lg hover:from-red-600 hover:to-red-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                                 </svg>
                                 <span class="text-sm font-semibold">YouTube</span>
                             </a>
 
                             <!-- Email -->
-                            <button onclick="showEmailModal()" 
-                               class="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-4 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                            <button onclick="showEmailModal()"
+                                class="flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 px-4 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
                                 </svg>
                                 <span class="text-sm font-semibold">Email</span>
                             </button>
@@ -149,93 +178,112 @@
 
                     <!-- Journey to ASN Section -->
                     <div class="border-t border-gray-200 pt-8 mt-6">
-                        <h3 class="text-lg font-bold text-gray-800 mb-6 text-center">🎯 Perjalanan Meraih Mimpi Menjadi ASN</h3>
-                        
+                        <h3 class="text-lg font-bold text-gray-800 mb-6 text-center">🎯 Perjalanan Meraih Mimpi Menjadi
+                            ASN</h3>
+
                         <!-- Journey Steps -->
                         <div class="space-y-6">
                             <!-- Step 1 -->
                             <div class="flex items-start gap-4">
-                                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                                     1
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="font-semibold text-gray-800 mb-2">📚 Mulai Try Out Rutin</h4>
                                     <p class="text-sm text-gray-600 leading-relaxed">
-                                        Kerjakan try out secara konsisten untuk mengukur kemampuan dan mengidentifikasi area yang perlu diperbaiki. Konsistensi adalah kunci utama kesuksesan.
+                                        Kerjakan try out secara konsisten untuk mengukur kemampuan dan mengidentifikasi
+                                        area yang perlu diperbaiki. Konsistensi adalah kunci utama kesuksesan.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Arrow -->
                             <div class="flex justify-center">
-                                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                                 </svg>
                             </div>
 
                             <!-- Step 2 -->
                             <div class="flex items-start gap-4">
-                                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                                     2
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="font-semibold text-gray-800 mb-2">🔍 Pelajari Pembahasan Mendalam</h4>
                                     <p class="text-sm text-gray-600 leading-relaxed">
-                                        Setelah mengerjakan try out, pelajari setiap pembahasan dengan teliti. Pahami konsep dasar, strategi pengerjaan, dan tips untuk soal serupa.
+                                        Setelah mengerjakan try out, pelajari setiap pembahasan dengan teliti. Pahami
+                                        konsep dasar, strategi pengerjaan, dan tips untuk soal serupa.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Arrow -->
                             <div class="flex justify-center">
-                                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                                 </svg>
                             </div>
 
                             <!-- Step 3 -->
                             <div class="flex items-start gap-4">
-                                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                                     3
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="font-semibold text-gray-800 mb-2">📈 Evaluasi & Perbaikan</h4>
                                     <p class="text-sm text-gray-600 leading-relaxed">
-                                        Analisis hasil try out untuk melihat progress. Fokus pada materi yang masih lemah dan tingkatkan strategi pengerjaan soal.
+                                        Analisis hasil try out untuk melihat progress. Fokus pada materi yang masih
+                                        lemah dan tingkatkan strategi pengerjaan soal.
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Arrow -->
                             <div class="flex justify-center">
-                                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                                 </svg>
                             </div>
 
                             <!-- Step 4 -->
                             <div class="flex items-start gap-4">
-                                <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                                <div
+                                    class="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
                                     4
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="font-semibold text-gray-800 mb-2">🔄 Ulangi Siklus</h4>
                                     <p class="text-sm text-gray-600 leading-relaxed">
-                                        Terus ulangi siklus try out → pembahasan → evaluasi hingga mencapai target skor yang diinginkan. Jangan menyerah!
+                                        Terus ulangi siklus try out → pembahasan → evaluasi hingga mencapai target skor
+                                        yang diinginkan. Jangan menyerah!
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Arrow -->
                             <div class="flex justify-center">
-                                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                                 </svg>
                             </div>
 
                             <!-- Final Goal -->
-                            <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl p-6 text-center shadow-lg">
-                                <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                            <div
+                                class="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-xl p-6 text-center shadow-lg">
+                                <div
+                                    class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
                                     <span class="text-3xl">🏆</span>
                                 </div>
                                 <h4 class="font-bold text-white text-lg mb-2">LULUS CPNS!</h4>
@@ -279,32 +327,23 @@
             <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl">
                 <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Akses Pembahasan</h3>
                 <p class="text-gray-600 text-center mb-6">Masukkan password untuk melihat pembahasan</p>
-                
+
                 <form id="adminForm" class="space-y-4">
                     <div>
                         <label for="adminPassword" class="block text-sm font-medium text-gray-700 mb-2">
                             Password Admin
                         </label>
-                        <input 
-                            type="password" 
-                            id="adminPassword" 
+                        <input type="password" id="adminPassword"
                             class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none transition-colors"
-                            placeholder="Masukkan password"
-                            required
-                        >
+                            placeholder="Masukkan password" required>
                     </div>
                     <div class="flex gap-3">
-                        <button 
-                            type="button"
-                            id="cancelAdminBtn"
-                            class="flex-1 px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
-                        >
+                        <button type="button" id="cancelAdminBtn"
+                            class="flex-1 px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
                             Batal
                         </button>
-                        <button 
-                            type="submit"
-                            class="flex-1 px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold"
-                        >
+                        <button type="submit"
+                            class="flex-1 px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold">
                             Submit
                         </button>
                     </div>
@@ -317,23 +356,21 @@
             <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl text-center">
                 <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z">
+                        </path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">Konfirmasi</h3>
                 <p class="text-gray-600 mb-6">Apakah yakin langsung mau melihat pembahasan?</p>
-                
+
                 <div class="flex gap-3">
-                    <button 
-                        id="cancelConfirmBtn"
-                        class="flex-1 px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
-                    >
+                    <button id="cancelConfirmBtn"
+                        class="flex-1 px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
                         Tidak
                     </button>
-                    <button 
-                        id="confirmYesBtn"
-                        class="flex-1 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold"
-                    >
+                    <button id="confirmYesBtn"
+                        class="flex-1 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold">
                         Ya, Lanjutkan
                     </button>
                 </div>
@@ -341,67 +378,78 @@
         </div>
 
         <!-- Start Warning Modal -->
-        <div id="startWarningModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div id="startWarningModal"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
             <div class="bg-white rounded-2xl max-w-lg w-full p-8 shadow-2xl">
                 <div class="text-center mb-6">
                     <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z">
+                            </path>
                         </svg>
                     </div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-2">⚠️ Peringatan Penting</h3>
                     <p class="text-gray-600 mb-6">Harap baca dan pahami peringatan berikut sebelum memulai tryout</p>
                 </div>
-                
+
                 <div class="space-y-4 mb-8">
                     <div class="flex items-start gap-3 p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
-                        <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div
+                            class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                             <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
                             </svg>
                         </div>
                         <div>
                             <p class="font-semibold text-red-800 mb-1">Pastikan Koneksi Internet Stabil</p>
-                            <p class="text-sm text-red-700">Koneksi yang tidak stabil dapat menyebabkan jawaban tidak tersimpan</p>
+                            <p class="text-sm text-red-700">Koneksi yang tidak stabil dapat menyebabkan jawaban tidak
+                                tersimpan</p>
                         </div>
                     </div>
-                    
+
                     <div class="flex items-start gap-3 p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
-                        <div class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div
+                            class="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                             <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
                             </svg>
                         </div>
                         <div>
                             <p class="font-semibold text-yellow-800 mb-1">Jangan Refresh Halaman</p>
-                            <p class="text-sm text-yellow-700">Refresh halaman akan membuat ujian dimulai dari awal dan jawaban hilang</p>
+                            <p class="text-sm text-yellow-700">Refresh halaman akan membuat ujian dimulai dari awal dan
+                                jawaban hilang</p>
                         </div>
                     </div>
-                    
+
                     <div class="flex items-start gap-3 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-500">
-                        <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div
+                            class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                             <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
                             </svg>
                         </div>
                         <div>
                             <p class="font-semibold text-blue-800 mb-1">Kerjakan Soal dengan Teliti</p>
-                            <p class="text-sm text-blue-700">Baca setiap soal dengan cermat dan pilih jawaban yang paling tepat</p>
+                            <p class="text-sm text-blue-700">Baca setiap soal dengan cermat dan pilih jawaban yang
+                                paling tepat</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="flex gap-3">
-                    <button 
-                        id="cancelStartBtn"
-                        class="flex-1 px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
-                    >
+                    <button id="cancelStartBtn"
+                        class="flex-1 px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
                         Batal
                     </button>
-                    <button 
-                        id="proceedStartBtn"
-                        class="flex-1 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold"
-                    >
+                    <button id="proceedStartBtn"
+                        class="flex-1 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold">
                         Saya Mengerti, Mulai Tryout
                     </button>
                 </div>
@@ -409,29 +457,29 @@
         </div>
 
         <!-- Page Refresh Warning Modal -->
-        <div id="refreshWarningModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[60] p-4">
+        <div id="refreshWarningModal"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-[60] p-4">
             <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl text-center">
                 <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z">
+                        </path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">🚨 Peringatan!</h3>
-                <p class="text-gray-600 mb-6" id="refreshWarningText">Anda akan keluar dari halaman tryout. Semua jawaban yang sudah dikerjakan akan hilang dan ujian akan dimulai dari awal.</p>
-                
+                <p class="text-gray-600 mb-6" id="refreshWarningText">Anda akan keluar dari halaman tryout. Semua
+                    jawaban yang sudah dikerjakan akan hilang dan ujian akan dimulai dari awal.</p>
 
-                
+
+
                 <div class="flex gap-3">
-                    <button 
-                        id="stayOnPageBtn"
-                        class="flex-1 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold"
-                    >
+                    <button id="stayOnPageBtn"
+                        class="flex-1 px-4 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold">
                         Tetap di Halaman
                     </button>
-                    <button 
-                        id="leavePageBtn"
-                        class="flex-1 px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
-                    >
+                    <button id="leavePageBtn"
+                        class="flex-1 px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors">
                         Keluar
                     </button>
                 </div>
@@ -447,44 +495,54 @@
                         <!-- Left Section: Logo and Title -->
                         <div class="flex items-center gap-4">
                             <div class="w-12 h-12 bg-white rounded-lg shadow-md p-1">
-                                <img src="https://i.postimg.cc/hn03jqd2/Logo-Portal-Try-Out.png" alt="Logo Portal Try Out" class="w-full h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                                <div class="w-full h-full bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center hidden">
-                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                <img src="https://i.postimg.cc/hn03jqd2/Logo-Portal-Try-Out.png"
+                                    alt="Logo Portal Try Out" class="w-full h-full object-contain"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div
+                                    class="w-full h-full bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center hidden">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                        </path>
                                     </svg>
                                 </div>
                             </div>
                             <div>
                                 <h1 class="text-2xl font-bold text-gray-800">Tryout CPNS</h1>
-                                <p class="text-sm text-gray-600 font-semibold text-blue-600">"Latihan Cerdas, Karir Tuntas"</p>
+                                <p class="text-sm text-gray-600 font-semibold text-blue-600">"Latihan Cerdas, Karir
+                                    Tuntas"</p>
                             </div>
                         </div>
 
                         <!-- Center Section: Social Media -->
                         <div class="hidden md:flex items-center gap-4">
                             <!-- TikTok -->
-                            <a href="https://www.tiktok.com/@portal.tryout" target="_blank" rel="noopener noreferrer" 
-                               class="flex items-center gap-2 px-3 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors text-sm">
+                            <a href="https://www.tiktok.com/@portal.tryout" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center gap-2 px-3 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors text-sm">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43V7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.43z"/>
+                                    <path
+                                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43V7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.43z" />
                                 </svg>
                                 <span class="font-medium">portal.tryout</span>
                             </a>
 
                             <!-- YouTube -->
-                            <a href="https://www.youtube.com/@portaltryout" target="_blank" rel="noopener noreferrer" 
-                               class="flex items-center gap-2 px-3 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm">
+                            <a href="https://www.youtube.com/@portaltryout" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center gap-2 px-3 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                                 </svg>
                                 <span class="font-medium">Portal Try Out</span>
                             </a>
 
                             <!-- Instagram -->
-                            <a href="https://www.instagram.com/portaltryout/" target="_blank" rel="noopener noreferrer" 
-                               class="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg hover:from-pink-600 hover:to-purple-700 transition-colors text-sm">
+                            <a href="https://www.instagram.com/portaltryout/" target="_blank" rel="noopener noreferrer"
+                                class="flex items-center gap-2 px-3 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg hover:from-pink-600 hover:to-purple-700 transition-colors text-sm">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                                 </svg>
                                 <span class="font-medium">portaltryout</span>
                             </a>
@@ -492,7 +550,8 @@
 
                         <!-- Right Section: Timer -->
                         <div class="text-right">
-                            <div id="timer" class="text-3xl font-bold text-red-600 bg-red-50 px-4 py-2 rounded-lg border-2 border-red-200">
+                            <div id="timer"
+                                class="text-3xl font-bold text-red-600 bg-red-50 px-4 py-2 rounded-lg border-2 border-red-200">
                                 01:40:00
                             </div>
                             <p class="text-xs text-gray-500 mt-1">Waktu Tersisa</p>
@@ -534,9 +593,11 @@
                             <div class="mb-6">
                                 <div class="flex justify-between items-center mb-4">
                                     <div>
-                                        <div class="text-sm font-medium text-blue-600 mb-1" id="currentSubTest">TWK - Tes Wawasan Kebangsaan</div>
+                                        <div class="text-sm font-medium text-blue-600 mb-1" id="currentSubTest">TWK -
+                                            Tes Wawasan Kebangsaan</div>
                                         <h2 class="text-xl font-bold text-gray-800">
-                                            Soal <span id="currentQuestionNumber">1</span> dari <span id="totalQuestions">110</span>
+                                            Soal <span id="currentQuestionNumber">1</span> dari <span
+                                                id="totalQuestions">110</span>
                                         </h2>
                                     </div>
                                     <div class="text-sm text-gray-500">
@@ -557,13 +618,16 @@
 
                             <!-- Navigation Buttons -->
                             <div class="flex justify-between">
-                                <button id="prevBtn" class="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                                <button id="prevBtn"
+                                    class="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
                                     ← Sebelumnya
                                 </button>
-                                <button id="submitBtn" class="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold hidden">
+                                <button id="submitBtn"
+                                    class="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-semibold hidden">
                                     Submit Jawaban
                                 </button>
-                                <button id="nextBtn" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                                <button id="nextBtn"
+                                    class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
                                     Selanjutnya →
                                 </button>
                             </div>
@@ -574,16 +638,20 @@
         </div>
 
         <!-- Submit Confirmation Modal -->
-        <div id="submitConfirmModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div id="submitConfirmModal"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
             <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl text-center">
                 <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z">
+                        </path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">Konfirmasi Submit</h3>
-                <p class="text-gray-600 mb-4">Apakah Anda yakin untuk menyelesaikan Try Out ini? Setelah di-submit, Anda tidak dapat mengubah jawaban lagi.</p>
-                
+                <p class="text-gray-600 mb-4">Apakah Anda yakin untuk menyelesaikan Try Out ini? Setelah di-submit, Anda
+                    tidak dapat mengubah jawaban lagi.</p>
+
                 <!-- Progress Summary -->
                 <div class="bg-gray-50 rounded-lg p-4 mb-6">
                     <h4 class="font-semibold text-gray-800 mb-3 text-center">📊 Ringkasan Jawaban</h4>
@@ -603,18 +671,14 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="flex gap-3">
-                    <button 
-                        id="cancelSubmitBtn"
-                        class="flex-1 px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors"
-                    >
+                    <button id="cancelSubmitBtn"
+                        class="flex-1 px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors">
                         Batal
                     </button>
-                    <button 
-                        id="confirmSubmitBtn"
-                        class="flex-1 px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold"
-                    >
+                    <button id="confirmSubmitBtn"
+                        class="flex-1 px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold">
                         Ya, Submit
                     </button>
                 </div>
@@ -622,23 +686,28 @@
         </div>
 
         <!-- Token Error Modal -->
-        <div id="tokenErrorModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
+        <div id="tokenErrorModal"
+            class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4">
             <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl text-center">
                 <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z">
+                        </path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">🚫 Token Tidak Valid</h3>
                 <p class="text-gray-600 mb-6">Token akses yang Anda masukkan salah atau tidak valid.</p>
-                
+
                 <div class="bg-blue-50 rounded-lg p-4 mb-6 border-l-4 border-blue-500">
                     <h4 class="font-semibold text-blue-800 mb-3">📧 Cara Mendapatkan Token:</h4>
                     <div class="space-y-3 text-sm text-blue-700">
                         <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div
+                                class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                    </path>
                                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                                 </svg>
                             </div>
@@ -648,9 +717,11 @@
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
-                            <div class="w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <div
+                                class="w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                                 <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43V7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.43z"/>
+                                    <path
+                                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43V7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.43z" />
                                 </svg>
                             </div>
                             <div>
@@ -660,8 +731,9 @@
                         </div>
                     </div>
                 </div>
-                
-                <button onclick="closeTokenErrorModal()" class="w-full px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold">
+
+                <button onclick="closeTokenErrorModal()"
+                    class="w-full px-4 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold">
                     Tutup
                 </button>
             </div>
@@ -672,35 +744,41 @@
             <div class="bg-white rounded-2xl max-w-md w-full p-8 shadow-2xl text-center">
                 <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                        </path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-800 mb-2">📧 Email Portal Try Out</h3>
                 <p class="text-gray-600 mb-6">Salin alamat email di bawah ini untuk menghubungi kami</p>
-                
+
                 <div class="bg-gray-50 rounded-lg p-4 mb-6 border-2 border-dashed border-gray-300">
                     <div class="flex items-center justify-between">
                         <span class="text-lg font-mono text-gray-800" id="emailToCopy">portaltryout@gmail.com</span>
-                        <button onclick="copyEmail()" class="ml-3 px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-semibold">
+                        <button onclick="copyEmail()"
+                            class="ml-3 px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm font-semibold">
                             📋 Copy
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="text-xs text-gray-500 mb-6">
                     Klik tombol "Copy" untuk menyalin email ke clipboard
                 </div>
-                
-                <button onclick="closeEmailModal()" class="w-full px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors font-semibold">
+
+                <button onclick="closeEmailModal()"
+                    class="w-full px-4 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors font-semibold">
                     Tutup
                 </button>
             </div>
         </div>
 
         <!-- Image Zoom Modal -->
-        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-[9999] p-4">
+        <div id="imageModal"
+            class="fixed inset-0 bg-black bg-opacity-90 hidden items-center justify-center z-[9999] p-4">
             <div class="relative max-w-5xl max-h-full">
-                <button onclick="closeImageModal()" class="absolute -top-12 right-0 text-white text-2xl hover:text-gray-300 transition-colors">
+                <button onclick="closeImageModal()"
+                    class="absolute -top-12 right-0 text-white text-2xl hover:text-gray-300 transition-colors">
                     ✕ Tutup
                 </button>
                 <div class="bg-white rounded-lg p-4 max-h-[90vh] overflow-auto">
@@ -715,8 +793,9 @@
             <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
                 <div class="p-8">
                     <h2 class="text-3xl font-bold text-center mb-2 text-gray-800">Hasil Tryout CPNS</h2>
-                    <p class="text-center text-gray-600 mb-6">Peserta: <span id="finalParticipantName" class="font-semibold"></span></p>
-                    
+                    <p class="text-center text-gray-600 mb-6">Peserta: <span id="finalParticipantName"
+                            class="font-semibold"></span></p>
+
                     <!-- Sub Test Scores -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                         <div class="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg p-6 text-center">
@@ -729,7 +808,8 @@
                             <div class="text-sm opacity-90 mb-2">TIU Score</div>
                             <div class="text-xs" id="tiuStatus">-</div>
                         </div>
-                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg p-6 text-center">
+                        <div
+                            class="bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-lg p-6 text-center">
                             <div class="text-2xl font-bold" id="tkpScore">0</div>
                             <div class="text-sm opacity-90 mb-2">TKP Score</div>
                             <div class="text-xs" id="tkpStatus">-</div>
@@ -759,7 +839,8 @@
                     </div>
 
                     <div class="text-center mt-8">
-                        <button onclick="location.reload()" class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                        <button onclick="location.reload()"
+                            class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold">
                             Coba Lagi
                         </button>
                     </div>
@@ -771,41 +852,51 @@
     <script>
         // Sub test configuration
         const subTests = {
-            TWK: { name: "Tes Wawasan Kebangsaan", count: 30, passingScore: 65 },
-            TIU: { name: "Tes Intelegensi Umum", count: 35, passingScore: 80 },
-            TKP: { name: "Tes Karakteristik Pribadi", count: 45, passingScore: 166 }
+            TWK: {
+                name: "Tes Wawasan Kebangsaan",
+                count: 30,
+                passingScore: 65
+            },
+            TIU: {
+                name: "Tes Intelegensi Umum",
+                count: 35,
+                passingScore: 80
+            },
+            TKP: {
+                name: "Tes Karakteristik Pribadi",
+                count: 45,
+                passingScore: 166
+            }
         };
 
         // Question data - TWK (30 questions)
-        const twkQuestions = [
-            {
+        const twkQuestions = [{
                 id: 1,
                 subTest: "TWK",
                 question: "Pancasila sebagai dasar negara Indonesia terdiri dari berapa sila?",
                 image: "https://iili.io/KjGGRXs.png",
-                options: [
-                    { 
-                        text: "3 sila", 
+                options: [{
+                        text: "3 sila",
                         score: 1,
                         image: "https://i.postimg.cc/R0502tvs/Perencanaan-Rumah-1.png"
                     },
-                    { 
-                        text: "4 sila", 
+                    {
+                        text: "4 sila",
                         score: 2,
                         image: "https://i.postimg.cc/R0502tvs/Perencanaan-Rumah-1.png"
                     },
-                    { 
-                        text: "5 sila", 
+                    {
+                        text: "5 sila",
                         score: 5,
                         image: "https://i.postimg.cc/R0502tvs/Perencanaan-Rumah-1.png"
                     },
-                    { 
-                        text: "6 sila", 
+                    {
+                        text: "6 sila",
                         score: 1,
                         image: "https://i.postimg.cc/R0502tvs/Perencanaan-Rumah-1.png"
                     },
-                    { 
-                        text: "7 sila", 
+                    {
+                        text: "7 sila",
                         score: 1,
                         image: "https://i.postimg.cc/R0502tvs/Perencanaan-Rumah-1.png"
                     }
@@ -813,8 +904,7 @@
                 correctAnswer: 2,
                 explanation: "Pancasila terdiri dari 5 sila yang merupakan dasar filosofis negara Indonesia. Kelima sila tersebut adalah: 1) Ketuhanan Yang Maha Esa, 2) Kemanusiaan yang adil dan beradab, 3) Persatuan Indonesia, 4) Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan, 5) Keadilan sosial bagi seluruh rakyat Indonesia.",
                 explanationImage: "https://iili.io/KjGGRXs.png",
-                optionExplanations: [
-                    {
+                optionExplanations: [{
                         text: "Pilihan A (3 sila) salah karena Pancasila memiliki lebih dari 3 sila. Pancasila adalah dasar negara yang lengkap dengan 5 sila.",
                         image: "https://i.postimg.cc/R0502tvs/Perencanaan-Rumah-1.png"
                     },
@@ -840,12 +930,26 @@
                 id: 2,
                 subTest: "TWK",
                 question: "Siapa yang menjadi Presiden pertama Republik Indonesia?",
-                options: [
-                    { text: "Mohammad Hatta", score: 2 },
-                    { text: "Soekarno", score: 5 },
-                    { text: "Soeharto", score: 1 },
-                    { text: "B.J. Habibie", score: 1 },
-                    { text: "Megawati Soekarnoputri", score: 1 }
+                options: [{
+                        text: "Mohammad Hatta",
+                        score: 2
+                    },
+                    {
+                        text: "Soekarno",
+                        score: 5
+                    },
+                    {
+                        text: "Soeharto",
+                        score: 1
+                    },
+                    {
+                        text: "B.J. Habibie",
+                        score: 1
+                    },
+                    {
+                        text: "Megawati Soekarnoputri",
+                        score: 1
+                    }
                 ],
                 correctAnswer: 1,
                 explanation: "Soekarno adalah Presiden pertama Republik Indonesia yang menjabat dari tahun 1945-1967. Beliau juga dikenal sebagai Proklamator kemerdekaan Indonesia bersama Mohammad Hatta pada 17 Agustus 1945."
@@ -858,12 +962,26 @@
                 id: i,
                 subTest: "TWK",
                 question: `Soal TWK ${i}: Pertanyaan tentang wawasan kebangsaan Indonesia?`,
-                options: [
-                    { text: "Pilihan A", score: 1 },
-                    { text: "Pilihan B", score: 2 },
-                    { text: "Pilihan C (Benar)", score: 5 },
-                    { text: "Pilihan D", score: 1 },
-                    { text: "Pilihan E", score: 1 }
+                options: [{
+                        text: "Pilihan A",
+                        score: 1
+                    },
+                    {
+                        text: "Pilihan B",
+                        score: 2
+                    },
+                    {
+                        text: "Pilihan C (Benar)",
+                        score: 5
+                    },
+                    {
+                        text: "Pilihan D",
+                        score: 1
+                    },
+                    {
+                        text: "Pilihan E",
+                        score: 1
+                    }
                 ],
                 correctAnswer: 2,
                 explanation: `Pembahasan untuk soal TWK ${i}: Penjelasan mengenai wawasan kebangsaan Indonesia.`
@@ -877,12 +995,26 @@
                 id: i + 30,
                 subTest: "TIU",
                 question: `Soal TIU ${i}: Jika 2x + 5 = 15, maka nilai x adalah?`,
-                options: [
-                    { text: "3", score: 1 },
-                    { text: "5 (Benar)", score: 5 },
-                    { text: "7", score: 2 },
-                    { text: "10", score: 1 },
-                    { text: "15", score: 1 }
+                options: [{
+                        text: "3",
+                        score: 1
+                    },
+                    {
+                        text: "5 (Benar)",
+                        score: 5
+                    },
+                    {
+                        text: "7",
+                        score: 2
+                    },
+                    {
+                        text: "10",
+                        score: 1
+                    },
+                    {
+                        text: "15",
+                        score: 1
+                    }
                 ],
                 correctAnswer: 1,
                 explanation: `Pembahasan TIU ${i}: 2x + 5 = 15, maka 2x = 10, sehingga x = 5.`
@@ -896,12 +1028,26 @@
                 id: i + 65,
                 subTest: "TKP",
                 question: `Soal TKP ${i}: Ketika menghadapi konflik di tempat kerja, sikap yang paling tepat adalah?`,
-                options: [
-                    { text: "Menghindari konflik", score: 2 },
-                    { text: "Mencari solusi bersama", score: 5 },
-                    { text: "Menyalahkan pihak lain", score: 1 },
-                    { text: "Melaporkan ke atasan", score: 3 },
-                    { text: "Diam saja", score: 1 }
+                options: [{
+                        text: "Menghindari konflik",
+                        score: 2
+                    },
+                    {
+                        text: "Mencari solusi bersama",
+                        score: 5
+                    },
+                    {
+                        text: "Menyalahkan pihak lain",
+                        score: 1
+                    },
+                    {
+                        text: "Melaporkan ke atasan",
+                        score: 3
+                    },
+                    {
+                        text: "Diam saja",
+                        score: 1
+                    }
                 ],
                 correctAnswer: 1,
                 explanation: `Pembahasan TKP ${i}: Mencari solusi bersama menunjukkan sikap dewasa dan konstruktif dalam menyelesaikan konflik.`
@@ -924,19 +1070,19 @@
         // Initialize the application
         function init() {
             // Set up start form handler
-            document.getElementById('startForm').addEventListener('submit', function(e) {
+            document.getElementById('startForm').addEventListener('submit', function (e) {
                 e.preventDefault();
                 showStartWarning();
             });
 
             // Set up admin button handler
-            document.getElementById('adminBtn').addEventListener('click', function() {
+            document.getElementById('adminBtn').addEventListener('click', function () {
                 document.getElementById('adminModal').classList.remove('hidden');
                 document.getElementById('adminModal').classList.add('flex');
             });
 
             // Set up admin form handler
-            document.getElementById('adminForm').addEventListener('submit', function(e) {
+            document.getElementById('adminForm').addEventListener('submit', function (e) {
                 e.preventDefault();
                 const password = document.getElementById('adminPassword').value;
                 if (password === 'admin123') {
@@ -950,25 +1096,37 @@
             });
 
             // Set up cancel admin button
-            document.getElementById('cancelAdminBtn').addEventListener('click', function() {
+            document.getElementById('cancelAdminBtn').addEventListener('click', function () {
                 document.getElementById('adminModal').classList.add('hidden');
                 document.getElementById('adminModal').classList.remove('flex');
                 document.getElementById('adminPassword').value = '';
             });
 
             // Set up confirmation modal handlers
-            document.getElementById('cancelConfirmBtn').addEventListener('click', function() {
+            document.getElementById('cancelConfirmBtn').addEventListener('click', function () {
                 document.getElementById('confirmModal').classList.add('hidden');
                 document.getElementById('confirmModal').classList.remove('flex');
             });
 
-            document.getElementById('confirmYesBtn').addEventListener('click', function() {
+            document.getElementById('confirmYesBtn').addEventListener('click', function () {
                 // Show results with dummy data for admin access
                 participantName = 'Admin';
                 const dummyResults = {
-                    TWK: { score: 150, correct: 30, total: 30 },
-                    TIU: { score: 175, correct: 35, total: 35 },
-                    TKP: { score: 225, correct: 45, total: 45 }
+                    TWK: {
+                        score: 150,
+                        correct: 30,
+                        total: 30
+                    },
+                    TIU: {
+                        score: 175,
+                        correct: 35,
+                        total: 35
+                    },
+                    TKP: {
+                        score: 225,
+                        correct: 45,
+                        total: 45
+                    }
                 };
                 showResults(550, 110, 100, dummyResults);
                 document.getElementById('confirmModal').classList.add('hidden');
@@ -976,36 +1134,36 @@
             });
 
             // Set up submit confirmation modal handlers
-            document.getElementById('cancelSubmitBtn').addEventListener('click', function() {
+            document.getElementById('cancelSubmitBtn').addEventListener('click', function () {
                 document.getElementById('submitConfirmModal').classList.add('hidden');
                 document.getElementById('submitConfirmModal').classList.remove('flex');
             });
 
-            document.getElementById('confirmSubmitBtn').addEventListener('click', function() {
+            document.getElementById('confirmSubmitBtn').addEventListener('click', function () {
                 document.getElementById('submitConfirmModal').classList.add('hidden');
                 document.getElementById('submitConfirmModal').classList.remove('flex');
                 submitAnswers();
             });
 
             // Set up start warning modal handlers
-            document.getElementById('cancelStartBtn').addEventListener('click', function() {
+            document.getElementById('cancelStartBtn').addEventListener('click', function () {
                 document.getElementById('startWarningModal').classList.add('hidden');
                 document.getElementById('startWarningModal').classList.remove('flex');
             });
 
-            document.getElementById('proceedStartBtn').addEventListener('click', function() {
+            document.getElementById('proceedStartBtn').addEventListener('click', function () {
                 document.getElementById('startWarningModal').classList.add('hidden');
                 document.getElementById('startWarningModal').classList.remove('flex');
                 startExam();
             });
 
             // Set up refresh warning modal handlers
-            document.getElementById('stayOnPageBtn').addEventListener('click', function() {
+            document.getElementById('stayOnPageBtn').addEventListener('click', function () {
                 document.getElementById('refreshWarningModal').classList.add('hidden');
                 document.getElementById('refreshWarningModal').classList.remove('flex');
             });
 
-            document.getElementById('leavePageBtn').addEventListener('click', function() {
+            document.getElementById('leavePageBtn').addEventListener('click', function () {
                 allowPageLeave = true;
                 location.reload();
             });
@@ -1018,7 +1176,7 @@
         function showStartWarning() {
             const tokenInput = document.getElementById('participantToken');
             const token = tokenInput.value.trim();
-            
+
             if (!token) {
                 alert('Silakan masukkan token akses');
                 return;
@@ -1038,9 +1196,9 @@
         // Setup page protection
         function setupPageProtection() {
             // Prevent page refresh/close during exam and results viewing
-            window.addEventListener('beforeunload', function(e) {
+            window.addEventListener('beforeunload', function (e) {
                 const isViewingResults = document.getElementById('resultsModal').classList.contains('flex');
-                
+
                 if (((examStarted && !isSubmitted) || isViewingResults) && !allowPageLeave) {
                     e.preventDefault();
                     e.returnValue = '';
@@ -1049,13 +1207,13 @@
             });
 
             // Handle page visibility change (detect refresh attempts)
-            document.addEventListener('visibilitychange', function() {
+            document.addEventListener('visibilitychange', function () {
                 const isViewingResults = document.getElementById('resultsModal').classList.contains('flex');
-                
+
                 if ((examStarted && !isSubmitted) || isViewingResults) {
                     if (document.visibilityState === 'visible') {
                         // Small delay to ensure page is fully loaded
-                        setTimeout(function() {
+                        setTimeout(function () {
                             if (!allowPageLeave) {
                                 showRefreshWarning();
                             }
@@ -1065,10 +1223,11 @@
             });
 
             // Detect F5 key press
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 const isViewingResults = document.getElementById('resultsModal').classList.contains('flex');
-                
-                if (((examStarted && !isSubmitted) || isViewingResults) && (e.key === 'F5' || (e.ctrlKey && e.key === 'r'))) {
+
+                if (((examStarted && !isSubmitted) || isViewingResults) && (e.key === 'F5' || (e.ctrlKey && e
+                        .key === 'r'))) {
                     e.preventDefault();
                     showRefreshWarning();
                 }
@@ -1081,12 +1240,14 @@
             const warningText = document.getElementById('refreshWarningText');
             if (document.getElementById('resultsModal').classList.contains('flex')) {
                 // User is viewing results/pembahasan
-                warningText.textContent = 'Anda akan keluar dari halaman pembahasan. Pembahasan yang sedang dibaca akan tertutup.';
+                warningText.textContent =
+                    'Anda akan keluar dari halaman pembahasan. Pembahasan yang sedang dibaca akan tertutup.';
             } else {
                 // User is in exam
-                warningText.textContent = 'Anda akan keluar dari halaman tryout. Semua jawaban yang sudah dikerjakan akan hilang dan ujian akan dimulai dari awal.';
+                warningText.textContent =
+                    'Anda akan keluar dari halaman tryout. Semua jawaban yang sudah dikerjakan akan hilang dan ujian akan dimulai dari awal.';
             }
-            
+
             document.getElementById('refreshWarningModal').classList.remove('hidden');
             document.getElementById('refreshWarningModal').classList.add('flex');
         }
@@ -1095,7 +1256,7 @@
         function startExam() {
             console.log('Starting exam...');
             console.log('Questions available:', questions.length);
-            
+
             // Hide welcome page and show exam page
             document.getElementById('welcomePage').style.display = 'none';
             document.getElementById('examPage').style.display = 'flex';
@@ -1106,16 +1267,16 @@
             // Initialize exam
             console.log('Generating navigation buttons...');
             generateNavigationButtons();
-            
+
             console.log('Loading first question...');
             loadQuestion(0);
-            
+
             console.log('Starting timer...');
             startTimer();
-            
+
             console.log('Updating navigation buttons...');
             updateNavigationButtons();
-            
+
             console.log('Exam initialization complete');
         }
 
@@ -1126,18 +1287,19 @@
                 console.error('Navigation container not found');
                 return;
             }
-            
+
             navContainer.innerHTML = '';
-            
+
             questions.forEach((_, index) => {
                 const button = document.createElement('button');
                 button.textContent = index + 1;
-                button.className = 'w-8 h-8 text-xs rounded-lg border-2 font-semibold transition-colors hover:bg-gray-100';
+                button.className =
+                    'w-8 h-8 text-xs rounded-lg border-2 font-semibold transition-colors hover:bg-gray-100';
                 button.onclick = () => goToQuestion(index);
                 button.id = `nav-btn-${index}`;
                 navContainer.appendChild(button);
             });
-            
+
             console.log(`Generated ${questions.length} navigation buttons`);
         }
 
@@ -1146,11 +1308,14 @@
             questions.forEach((_, index) => {
                 const button = document.getElementById(`nav-btn-${index}`);
                 if (index === currentQuestion) {
-                    button.className = 'w-10 h-10 rounded-lg border-2 font-semibold transition-colors bg-blue-600 text-white border-blue-600';
+                    button.className =
+                        'w-10 h-10 rounded-lg border-2 font-semibold transition-colors bg-blue-600 text-white border-blue-600';
                 } else if (userAnswers[index] !== undefined) {
-                    button.className = 'w-10 h-10 rounded-lg border-2 font-semibold transition-colors bg-red-500 text-white border-red-500';
+                    button.className =
+                        'w-10 h-10 rounded-lg border-2 font-semibold transition-colors bg-red-500 text-white border-red-500';
                 } else {
-                    button.className = 'w-10 h-10 rounded-lg border-2 font-semibold transition-colors bg-gray-300 text-gray-700 border-gray-300 hover:bg-gray-400';
+                    button.className =
+                        'w-10 h-10 rounded-lg border-2 font-semibold transition-colors bg-gray-300 text-gray-700 border-gray-300 hover:bg-gray-400';
                 }
             });
         }
@@ -1161,20 +1326,20 @@
                 console.error('No questions available');
                 return;
             }
-            
+
             if (index < 0 || index >= questions.length) {
                 console.error('Invalid question index:', index);
                 return;
             }
-            
+
             const question = questions[index];
             console.log('Loading question:', index + 1, question);
-            
+
             // Update question number and total
             const currentQuestionEl = document.getElementById('currentQuestionNumber');
             const totalQuestionsEl = document.getElementById('totalQuestions');
             const questionScoreEl = document.getElementById('questionScore');
-            
+
             if (currentQuestionEl) currentQuestionEl.textContent = index + 1;
             if (totalQuestionsEl) totalQuestionsEl.textContent = questions.length;
             if (questionScoreEl) questionScoreEl.textContent = Math.max(...question.options.map(opt => opt.score));
@@ -1201,17 +1366,18 @@
             const optionsContainer = document.getElementById('answerOptions');
             if (optionsContainer) {
                 optionsContainer.innerHTML = '';
-                
+
                 question.options.forEach((option, optIndex) => {
                     const optionDiv = document.createElement('div');
-                    optionDiv.className = 'flex items-start p-4 border-2 border-gray-200 rounded-lg hover:border-blue-300 transition-colors cursor-pointer';
+                    optionDiv.className =
+                        'flex items-start p-4 border-2 border-gray-200 rounded-lg hover:border-blue-300 transition-colors cursor-pointer';
                     optionDiv.onclick = () => selectAnswer(index, optIndex);
-                    
+
                     const isSelected = userAnswers[index] === optIndex;
                     if (isSelected) {
                         optionDiv.className += ' border-blue-500 bg-blue-50';
                     }
-                    
+
                     optionDiv.innerHTML = `
                         <input type="radio" name="question${index}" value="${optIndex}" class="mr-4 w-4 h-4 text-blue-600 mt-1" ${isSelected ? 'checked' : ''}>
                         <div class="flex-1">
@@ -1226,7 +1392,7 @@
                             ` : ''}
                         </div>
                     `;
-                    
+
                     optionsContainer.appendChild(optionDiv);
                 });
             }
@@ -1257,7 +1423,7 @@
             const submitBtn = document.getElementById('submitBtn');
 
             prevBtn.disabled = currentQuestion === 0;
-            
+
             if (currentQuestion === questions.length - 1) {
                 nextBtn.style.display = 'none';
                 submitBtn.style.display = 'block';
@@ -1289,11 +1455,11 @@
             timerInterval = setInterval(() => {
                 timeLeft--;
                 updateTimerDisplay();
-                
+
                 if (timeLeft <= 5) {
                     document.getElementById('timer').classList.add('timer-warning');
                 }
-                
+
                 if (timeLeft <= 0) {
                     clearInterval(timerInterval);
                     submitAnswers();
@@ -1305,7 +1471,7 @@
             const hours = Math.floor(timeLeft / 3600);
             const minutes = Math.floor((timeLeft % 3600) / 60);
             const seconds = timeLeft % 60;
-            document.getElementById('timer').textContent = 
+            document.getElementById('timer').textContent =
                 `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
         }
 
@@ -1314,11 +1480,11 @@
             // Calculate answered and unanswered questions
             const answeredQuestions = Object.keys(userAnswers).length;
             const unansweredQuestions = questions.length - answeredQuestions;
-            
+
             // Update the counts in the modal
             document.getElementById('answeredCount').textContent = answeredQuestions;
             document.getElementById('unansweredCount').textContent = unansweredQuestions;
-            
+
             document.getElementById('submitConfirmModal').classList.remove('hidden');
             document.getElementById('submitConfirmModal').classList.add('flex');
         }
@@ -1326,31 +1492,43 @@
         // Submit answers
         function submitAnswers() {
             if (isSubmitted) return;
-            
+
             isSubmitted = true;
             allowPageLeave = true;
             clearInterval(timerInterval);
-            
+
             // Calculate results by sub test
             const results = {
-                TWK: { score: 0, correct: 0, total: 0 },
-                TIU: { score: 0, correct: 0, total: 0 },
-                TKP: { score: 0, correct: 0, total: 0 }
+                TWK: {
+                    score: 0,
+                    correct: 0,
+                    total: 0
+                },
+                TIU: {
+                    score: 0,
+                    correct: 0,
+                    total: 0
+                },
+                TKP: {
+                    score: 0,
+                    correct: 0,
+                    total: 0
+                }
             };
 
             let totalScore = 0;
             let totalCorrect = 0;
-            
+
             questions.forEach((question, index) => {
                 const userAnswer = userAnswers[index];
                 const subTest = question.subTest;
                 results[subTest].total++;
-                
+
                 if (userAnswer !== undefined) {
                     const score = question.options[userAnswer].score;
                     results[subTest].score += score;
                     totalScore += score;
-                    
+
                     if (userAnswer === question.correctAnswer) {
                         results[subTest].correct++;
                         totalCorrect++;
@@ -1358,7 +1536,8 @@
                 }
             });
 
-            const maxPossibleScore = questions.reduce((sum, q) => sum + Math.max(...q.options.map(opt => opt.score)), 0);
+            const maxPossibleScore = questions.reduce((sum, q) => sum + Math.max(...q.options.map(opt => opt.score)),
+            0);
             const percentage = Math.round((totalScore / maxPossibleScore) * 100);
 
             // Show results
@@ -1370,7 +1549,7 @@
             // Enable protection for results page
             examStarted = false; // Disable exam protection
             allowPageLeave = false; // Enable results protection
-            
+
             // Update sub test scores
             document.getElementById('twkScore').textContent = results.TWK.score;
             document.getElementById('tiuScore').textContent = results.TIU.score;
@@ -1452,7 +1631,7 @@
 
             Object.keys(questionsBySubTest).forEach(subTestKey => {
                 const subTestQuestions = questionsBySubTest[subTestKey];
-                
+
                 // Sub test header
                 const subTestHeader = document.createElement('div');
                 subTestHeader.className = 'mb-4 p-4 bg-gray-100 rounded-lg';
@@ -1472,8 +1651,9 @@
                     const userScore = userAnswer !== undefined ? question.options[userAnswer].score : 0;
 
                     const reviewItem = document.createElement('div');
-                    reviewItem.className = 'mb-4 p-4 border rounded-lg ' + (isCorrect ? 'border-green-200 bg-green-50' : 'border-red-200 bg-red-50');
-                    
+                    reviewItem.className = 'mb-4 p-4 border rounded-lg ' + (isCorrect ?
+                        'border-green-200 bg-green-50' : 'border-red-200 bg-red-50');
+
                     reviewItem.innerHTML = `
                         <div class="flex justify-between items-start mb-3">
                             <h5 class="font-semibold text-gray-800">${subTestKey} ${question.id <= 30 ? question.id : question.id <= 65 ? question.id - 30 : question.id - 65}</h5>
@@ -1566,7 +1746,7 @@
                             ` : ''}
                         </div>
                     `;
-                    
+
                     reviewContent.appendChild(reviewItem);
                 });
             });
@@ -1601,18 +1781,20 @@
 
         function copyEmail() {
             const email = 'portaltryout@gmail.com';
-            navigator.clipboard.writeText(email).then(function() {
+            navigator.clipboard.writeText(email).then(function () {
                 // Change button text temporarily to show success
                 const copyBtn = event.target;
                 const originalText = copyBtn.innerHTML;
                 copyBtn.innerHTML = '✅ Tersalin!';
-                copyBtn.className = copyBtn.className.replace('bg-blue-600 hover:bg-blue-700', 'bg-green-600 hover:bg-green-700');
-                
-                setTimeout(function() {
+                copyBtn.className = copyBtn.className.replace('bg-blue-600 hover:bg-blue-700',
+                    'bg-green-600 hover:bg-green-700');
+
+                setTimeout(function () {
                     copyBtn.innerHTML = originalText;
-                    copyBtn.className = copyBtn.className.replace('bg-green-600 hover:bg-green-700', 'bg-blue-600 hover:bg-blue-700');
+                    copyBtn.className = copyBtn.className.replace('bg-green-600 hover:bg-green-700',
+                        'bg-blue-600 hover:bg-blue-700');
                 }, 2000);
-            }).catch(function() {
+            }).catch(function () {
                 // Fallback for older browsers
                 const textArea = document.createElement('textarea');
                 textArea.value = email;
@@ -1638,7 +1820,7 @@
         }
 
         // Close modal when clicking outside the image
-        document.getElementById('imageModal').addEventListener('click', function(e) {
+        document.getElementById('imageModal').addEventListener('click', function (e) {
             if (e.target === this) {
                 closeImageModal();
             }
@@ -1647,53 +1829,54 @@
         // Right-click protection
         function setupRightClickProtection() {
             // Disable right-click context menu
-            document.addEventListener('contextmenu', function(e) {
+            document.addEventListener('contextmenu', function (e) {
                 e.preventDefault();
                 showRightClickWarning();
                 return false;
             });
 
             // Disable common keyboard shortcuts for copying/inspecting
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 // Disable F12 (Developer Tools)
                 if (e.key === 'F12') {
                     e.preventDefault();
                     showRightClickWarning();
                     return false;
                 }
-                
+
                 // Disable Ctrl+Shift+I (Developer Tools)
                 if (e.ctrlKey && e.shiftKey && e.key === 'I') {
                     e.preventDefault();
                     showRightClickWarning();
                     return false;
                 }
-                
+
                 // Disable Ctrl+Shift+J (Console)
                 if (e.ctrlKey && e.shiftKey && e.key === 'J') {
                     e.preventDefault();
                     showRightClickWarning();
                     return false;
                 }
-                
+
                 // Disable Ctrl+U (View Source)
                 if (e.ctrlKey && e.key === 'u') {
                     e.preventDefault();
                     showRightClickWarning();
                     return false;
                 }
-                
+
                 // Disable Ctrl+Shift+C (Inspect Element)
                 if (e.ctrlKey && e.shiftKey && e.key === 'C') {
                     e.preventDefault();
                     showRightClickWarning();
                     return false;
                 }
-                
+
                 // Allow Ctrl+C for normal copying in input fields
                 if (e.ctrlKey && e.key === 'c') {
                     const activeElement = document.activeElement;
-                    if (activeElement && (activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA')) {
+                    if (activeElement && (activeElement.tagName === 'INPUT' || activeElement.tagName ===
+                            'TEXTAREA')) {
                         return true; // Allow copying in input fields
                     }
                     // For other elements, show warning but don't prevent (some users might need it for accessibility)
@@ -1702,28 +1885,30 @@
             });
 
             // Disable text selection on question content (but allow in input fields)
-            document.addEventListener('selectstart', function(e) {
+            document.addEventListener('selectstart', function (e) {
                 const activeElement = e.target;
-                if (activeElement && (activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA' || activeElement.closest('input') || activeElement.closest('textarea'))) {
+                if (activeElement && (activeElement.tagName === 'INPUT' || activeElement.tagName ===
+                        'TEXTAREA' || activeElement.closest('input') || activeElement.closest('textarea'))) {
                     return true; // Allow selection in input fields
                 }
-                
+
                 // Check if we're in exam mode
                 if (examStarted && !isSubmitted) {
                     const questionContent = document.getElementById('questionContent');
                     const answerOptions = document.getElementById('answerOptions');
-                    
-                    if (questionContent && (questionContent.contains(activeElement) || answerOptions.contains(activeElement))) {
+
+                    if (questionContent && (questionContent.contains(activeElement) || answerOptions.contains(
+                            activeElement))) {
                         e.preventDefault();
                         return false;
                     }
                 }
-                
+
                 return true;
             });
 
             // Disable drag and drop of images
-            document.addEventListener('dragstart', function(e) {
+            document.addEventListener('dragstart', function (e) {
                 if (e.target.tagName === 'IMG') {
                     e.preventDefault();
                     return false;
@@ -1735,10 +1920,11 @@
         function showRightClickWarning() {
             // Create temporary warning message
             const warning = document.createElement('div');
-            warning.className = 'fixed top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg z-[9999] animate-pulse';
+            warning.className =
+                'fixed top-4 right-4 bg-red-500 text-white px-4 py-2 rounded-lg shadow-lg z-[9999] animate-pulse';
             warning.innerHTML = '⚠️ Aksi tidak diizinkan selama tryout';
             document.body.appendChild(warning);
-            
+
             // Remove warning after 3 seconds
             setTimeout(() => {
                 if (warning.parentNode) {
@@ -1748,10 +1934,44 @@
         }
 
         // Initialize the application when page loads
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             init();
             setupRightClickProtection();
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98babc62636af8e6',t:'MTc1OTk3OTk2MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script>
+        (function () {
+            function c() {
+                var b = a.contentDocument || a.contentWindow.document;
+                if (b) {
+                    var d = b.createElement('script');
+                    d.innerHTML =
+                        "window.__CF$cv$params={r:'98babc62636af8e6',t:'MTc1OTk3OTk2MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+                    b.getElementsByTagName('head')[0].appendChild(d)
+                }
+            }
+            if (document.body) {
+                var a = document.createElement('iframe');
+                a.height = 1;
+                a.width = 1;
+                a.style.position = 'absolute';
+                a.style.top = 0;
+                a.style.left = 0;
+                a.style.border = 'none';
+                a.style.visibility = 'hidden';
+                document.body.appendChild(a);
+                if ('loading' !== document.readyState) c();
+                else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c);
+                else {
+                    var e = document.onreadystatechange || function () {};
+                    document.onreadystatechange = function (b) {
+                        e(b);
+                        'loading' !== document.readyState && (document.onreadystatechange = e, c())
+                    }
+                }
+            }
+        })();
+    </script>
+</body>
+
 </html>
